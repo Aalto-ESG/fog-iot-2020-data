@@ -13,9 +13,9 @@ To avoid unnecessarily large datasets, the amount of frames depends on the amoun
 
 | Points per frame | Simulation duration (frames) |
 |:----------------:|:----------------------------:|
-| 1000             | 600                          |
-| 5000             | 200                          |
-| 10000            | 100                          |
+| 1000             | 1200                          |
+| 5000             | 400                          |
+| 10000            | 200                          |
 
 ## Dataset structure
 
@@ -29,8 +29,12 @@ The dataset is divided in to three groups: Metadata, sensors, state
 * Sensors: Contains data from all sensors for all simulation frames
 
 * State: Contains information about the physics state for all simulation frames
-    * Vehicle/Human locations
-    * Vehicle/Human rotations
+    * Actor locations
+        * Vectors with x, y, z values in meters. Z-axis points upwards to the ceiling.
+    * Actor rotations
+        * Vectors with pitch, yaw, roll rotations in degrees.
+    
+
 
 ## Dataset reading example
 
